@@ -66,7 +66,9 @@
           <h1 class="hero-title-text">
             Эффективные решения для вашего бизнеса
           </h1>
-          <button type="button" class="hero-btn btn">Заказать услугу</button>
+          <button type="button" class="hero-btn btn" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!--Наши приемущества-->
@@ -138,28 +140,37 @@
           <h2 class="work-title">Чем мы занимаемся</h2>
           <ul class="work-list list">
             <li class="work-item">
-              <img
-                src="./image/index/img1.jpg"
-                alt="пишем код"
-                width="370"
-                height="294"
-              />
+              <div class="work-box">
+                <img
+                  src="./image/index/img1.jpg"
+                  alt="пишем код"
+                  width="370"
+                  height="294"
+                />
+                <h3 class="work-top-title">Десктопные приложения</h3>
+              </div>
             </li>
             <li class="work-item">
-              <img
-                src="./image/index/img2.jpg"
-                alt="создаем интерфейс"
-                width="370"
-                height="294"
-              />
+              <div class="work-box">
+                <img
+                  src="./image/index/img2.jpg"
+                  alt="создаем интерфейс"
+                  width="370"
+                  height="294"
+                />
+                <h3 class="work-top-title">Мобильные приложения</h3>
+              </div>
             </li>
             <li class="work-item">
-              <img
-                src="./image/index/img3.jpg"
-                alt="подбираем цвета"
-                width="370"
-                height="294"
-              />
+              <div class="work-box">
+                <img
+                  src="./image/index/img3.jpg"
+                  alt="подбираем цвета"
+                  width="370"
+                  height="294"
+                />
+                <h3 class="work-top-title">Дизайнерские решения</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -490,5 +501,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="close-icon" width="15" height="15">
+            <use href="./image/index/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
