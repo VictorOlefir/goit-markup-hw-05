@@ -217,6 +217,11 @@ img {
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
+  transition: background-color 250ms, color 800ms;
+}
+.hero-btn:hover {
+  background: #1c79c5;
+  color: #d5e400;
 }
 
 /*==========================++++++POSITIVE++++++==========================*/
